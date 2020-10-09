@@ -51,7 +51,6 @@ pipeline {
                                 	<li>项目环境访问地址: ${params.mail_project_url} </li>
                                 	<li>项目运行环境的IP : ${params.mail_project_ip}</li>
                                 	<li>项目运行环境的jar路径 : ${params.project_path}</li>
-                                	<li>项目的运行包的名称： ${project_name}-${project_version}.${git_branch_name}.${git_project_commitID}.jar</li>
                                   </ul>
                                   </div>
                                   </div>
