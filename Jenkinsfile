@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('UnitTest') {
             steps {
-               sh './rununittest.sh'
+               sh 'chmod +x rununittest.sh; ./rununittest.sh'
             }
         }
         stage('Build') {
             steps {
-                sh './buildapp.sh'
+                sh 'chmod +x buildapp.sh;./buildapp.sh'
             }
         }
         stage('Deploy') {
             steps {
-                sh './deployapp.sh'
+                sh 'chmod +x deployapp.sh; ./deployapp.sh'
             }
         }
     }
