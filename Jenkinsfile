@@ -52,6 +52,20 @@ pipeline {
                                 	<li>项目运行环境的jar路径 : ${params.project_path}</li>
                                   </ul>
                                   </div>
+                                  <table>
+                                  		<tr>
+                                              <th><br />
+                                  			<h2>测试报告</h2>
+                                              </th>
+                                          </tr>
+
+                                  		<tr>
+                                  			<td>
+                                  				<div>${FILE ,path="/root/.jenkins/workspace/marvin-test/coverage.html"}</div>
+                                  			</td>
+                                  		</tr>
+
+                                  	</table>
                                   </div>
                                     """, cc: '', charset: 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
         }
