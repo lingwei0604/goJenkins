@@ -61,7 +61,7 @@ pipeline {
 
                                   		<tr>
                                   			<td>
-                                  				<div>${FILE ,path="/root/.jenkins/workspace/marvin-test/coverage.html"}</div>
+                                  				<div>'${FILE ,path="/root/.jenkins/workspace/marvin-test/coverage.html"}'</div>
                                   			</td>
                                   		</tr>
 
