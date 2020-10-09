@@ -55,9 +55,7 @@ pipeline {
                                   </ul>
                                   </div>
                                   </div>
-
-
-                                                """,, cc: '', charset: 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
+                                    """, cc: '', charset: 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
         }
     }
 }
