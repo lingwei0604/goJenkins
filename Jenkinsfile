@@ -41,7 +41,6 @@ pipeline {
                                   <ul>
                                 	<li>GIT项目的地址 : <a>${git_url}</a></li>
                                 	<li>GIT项目当前的分支名 : ${git_branch}</li>
-                                	<li>GIT最后一次提交的commitID : ${git_project_commitID}</li>
                                   </ul>
                                   </div>
                                 <div id="sum0">
