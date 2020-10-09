@@ -26,7 +26,8 @@ pipeline {
             emailext (
                         to: 'mawencheng@donews.com',
                         subject: "${currentBuild.currentResult}: ${env.JOB_NAME} - build ${currentBuild.number}",
-                        body: '${FILE, path="/root/.jenkins/workspace/marvin-test/coverage.html"}'
+                        body: '${FILE, path="/root/.jenkins/workspace/marvin-test/coverage.html"}',
+                        mimeType: 'text/html'
                     )
         }
     }
