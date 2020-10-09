@@ -23,7 +23,7 @@ pipeline {
             mail bcc: '', body: "<b>gopro build failed</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset    : 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
         }
         success {
-            mail bcc: '', body: "<table><tr><td><div>${FILE ,path="/root/.jenkins/workspace/marvin-test/coverage.html"}</div></td></tr></table> ", cc: '', charset: 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
+            mail bcc: '', body: "<b>gopro build success</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: 'yunwei-monitor@donews.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "mawencheng@donews.com";
         }
     }
 }
